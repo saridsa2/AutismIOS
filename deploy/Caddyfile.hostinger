@@ -1,0 +1,9 @@
+# Append this block to the existing Hostinger Caddyfile; validate then reload.
+srv1938927.hstgr.cloud {
+    handle_path /api/* {
+        reverse_proxy 127.0.0.1:3300
+    }
+    handle {
+        reverse_proxy 127.0.0.1:7880
+    }
+}

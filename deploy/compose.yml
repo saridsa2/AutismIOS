@@ -1,0 +1,53 @@
+services:
+  livekit:
+    image: livekit/livekit-server:v1.13.7
+    command: --config /etc/livekit.yaml
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./livekit.yaml:/etc/livekit.yaml:ro
+  api:
+    build: ../backend
+    restart: unless-stopped
+    env_file: ${ENV_FILE:-.env}
+    environment:
+      DATA_DIR: /data
+    ports:
+      - '127.0.0.1:${API_HOST_PORT:-3000}:3000'
+    volumes:
+      - companion-data:/data
+    networks:
+      - default
+      - accounts
+  agent:
+    build: ../backend
+    command: node dist/agent.js start
+    restart: unless-stopped
+    env_file: ${ENV_FILE:-.env}
+    environment:
+      DATA_DIR: /data
+      LIVEKIT_URL: ws://127.0.0.1:7880
+      SUPABASE_URL: http://127.0.0.1:8002
+    network_mode: host
+    volumes:
+      - companion-data:/data
+    depends_on:
+      - livekit
+      - api
+  caddy:
+    image: caddy:2.10.2
+    restart: unless-stopped
+    network_mode: host
+    env_file: ${ENV_FILE:-.env}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+volumes:
+  companion-data:
+  caddy-data:
+  caddy-config:
+networks:
+  accounts:
+    external: true
+    name: little-company-supabase_default

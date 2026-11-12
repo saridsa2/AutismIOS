@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E75E5759C29717049F2442B /* LabAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C05019CFABA389180034DF0 /* LabAPI.swift */; };
+		429BF739F144B4BBFFE0EF79 /* Models in Resources */ = {isa = PBXBuildFile; fileRef = 367C0F04D2E21CC75132353B /* Models */; };
+		755F770A30603A970D653905 /* SpeakerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B9BCC8CF4DA1899AE1CA45 /* SpeakerEngine.swift */; };
+		8080D65F9A4267E8140839C6 /* LabStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2696458EE8F1AA5CEE4154 /* LabStore.swift */; };
+		A570AE20B2E2F060331C21D5 /* SpeakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D60583DFEC870D779DEE72E /* SpeakerTests.swift */; };
+		F593E8812EFC350DA547FAAC /* VoiceLabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3ACEF0618CD607004660C0 /* VoiceLabApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F964710F69F8620FAEB37921 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34BA151AC7DD78771AA295B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A89A2ABF219FED4460E2B0BD;
+			remoteInfo = VoiceLab;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C05019CFABA389180034DF0 /* LabAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabAPI.swift; sourceTree = "<group>"; };
+		30B9BCC8CF4DA1899AE1CA45 /* SpeakerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerEngine.swift; sourceTree = "<group>"; };
+		367C0F04D2E21CC75132353B /* Models */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Models; path = VoiceLab/Models; sourceTree = SOURCE_ROOT; };
+		468CDF28B0CC30446AA0052E /* VoiceLab.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = VoiceLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D60583DFEC870D779DEE72E /* SpeakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerTests.swift; sourceTree = "<group>"; };
+		CB2696458EE8F1AA5CEE4154 /* LabStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabStore.swift; sourceTree = "<group>"; };
+		CD3ACEF0618CD607004660C0 /* VoiceLabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceLabApp.swift; sourceTree = "<group>"; };
+		E58FC8E303BA4CF46D82CB49 /* VoiceLabTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = VoiceLabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		45A195CB53AE087F109FC6F8 /* VoiceLab */ = {
+			isa = PBXGroup;
+			children = (
+				0C05019CFABA389180034DF0 /* LabAPI.swift */,
+				CB2696458EE8F1AA5CEE4154 /* LabStore.swift */,
+				30B9BCC8CF4DA1899AE1CA45 /* SpeakerEngine.swift */,
+				CD3ACEF0618CD607004660C0 /* VoiceLabApp.swift */,
+			);
+			path = VoiceLab;
+			sourceTree = "<group>";
+		};
+		5FEFD16E80DA8C8E2BAD2B49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				468CDF28B0CC30446AA0052E /* VoiceLab.app */,
+				E58FC8E303BA4CF46D82CB49 /* VoiceLabTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D989A71D2F3C554B07EA2D5 = {
+			isa = PBXGroup;
+			children = (
+				367C0F04D2E21CC75132353B /* Models */,
+				45A195CB53AE087F109FC6F8 /* VoiceLab */,
+				A49CAF9CA781FBD97298F78D /* VoiceLabTests */,
+				5FEFD16E80DA8C8E2BAD2B49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A49CAF9CA781FBD97298F78D /* VoiceLabTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D60583DFEC870D779DEE72E /* SpeakerTests.swift */,
+			);
+			path = VoiceLabTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F76A11D61F1D562D27CEA11 /* VoiceLabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91DDCFD8AE1EF5CF9B90141B /* Build configuration list for PBXNativeTarget "VoiceLabTests" */;
+			buildPhases = (
+				32C1C9A5413779CE4781964F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D42B06A63E1F7EA9B3C23B6 /* PBXTargetDependency */,
+			);
+			name = VoiceLabTests;
+			packageProductDependencies = (
+			);
+			productName = VoiceLabTests;
+			productReference = E58FC8E303BA4CF46D82CB49 /* VoiceLabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A89A2ABF219FED4460E2B0BD /* VoiceLab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD479DD0B6E1B4A7522F1695 /* Build configuration list for PBXNativeTarget "VoiceLab" */;
+			buildPhases = (
+				A5F651D2EDEF5188E4087AFD /* Sources */,
+				69BD0C5DE299EEEA575828E7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceLab;
+			packageProductDependencies = (
+			);
+			productName = VoiceLab;
+			productReference = 468CDF28B0CC30446AA0052E /* VoiceLab.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34BA151AC7DD78771AA295B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A89A2ABF219FED4460E2B0BD = {
+						DevelopmentTeam = 2NPACMVW3K;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C4546BED7995CE30104C6D0E /* Build configuration list for PBXProject "VoiceLab" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9D989A71D2F3C554B07EA2D5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A89A2ABF219FED4460E2B0BD /* VoiceLab */,
+				8F76A11D61F1D562D27CEA11 /* VoiceLabTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69BD0C5DE299EEEA575828E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				429BF739F144B4BBFFE0EF79 /* Models in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32C1C9A5413779CE4781964F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A570AE20B2E2F060331C21D5 /* SpeakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5F651D2EDEF5188E4087AFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E75E5759C29717049F2442B /* LabAPI.swift in Sources */,
+				8080D65F9A4267E8140839C6 /* LabStore.swift in Sources */,
+				755F770A30603A970D653905 /* SpeakerEngine.swift in Sources */,
+				F593E8812EFC350DA547FAAC /* VoiceLabApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D42B06A63E1F7EA9B3C23B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A89A2ABF219FED4460E2B0BD /* VoiceLab */;
+			targetProxy = F964710F69F8620FAEB37921 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		068E48CEC4E34ED34A1C2DD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = Simulator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NPACMVW3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Voice Lab";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record short voice samples for on-device speaker enrollment and matching.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = app.littlecompany.voicelab;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2DB25A36828A717FE55A2097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceLab.app/VoiceLab";
+			};
+			name = Release;
+		};
+		3F79DB1306E2518221C1DE14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VoiceLab.app/VoiceLab";
+			};
+			name = Debug;
+		};
+		3F83E54DCF0977AA00BB5D80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		5C5A648520242546924184CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FEB1BD0F0E2F3811362DEDF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]" = Simulator.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "-";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NPACMVW3K;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Voice Lab";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Record short voice samples for on-device speaker enrollment and matching.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = app.littlecompany.voicelab;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91DDCFD8AE1EF5CF9B90141B /* Build configuration list for PBXNativeTarget "VoiceLabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F79DB1306E2518221C1DE14 /* Debug */,
+				2DB25A36828A717FE55A2097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BD479DD0B6E1B4A7522F1695 /* Build configuration list for PBXNativeTarget "VoiceLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEB1BD0F0E2F3811362DEDF2 /* Debug */,
+				068E48CEC4E34ED34A1C2DD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C4546BED7995CE30104C6D0E /* Build configuration list for PBXProject "VoiceLab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C5A648520242546924184CC /* Debug */,
+				3F83E54DCF0977AA00BB5D80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34BA151AC7DD78771AA295B1 /* Project object */;
+}

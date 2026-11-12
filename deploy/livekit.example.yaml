@@ -1,0 +1,16 @@
+port: 7880
+bind_addresses:
+  - '0.0.0.0'
+rtc:
+  tcp_port: 7881
+  port_range_start: 50000
+  port_range_end: 50100
+  use_external_ip: true
+turn:
+  enabled: true
+  domain: voice.example.com
+  udp_port: 3478
+keys:
+  replace_api_key: replace_with_a_random_secret_at_least_32_characters
+logging:
+  level: info

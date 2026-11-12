@@ -1,0 +1,47 @@
+name: VoiceLab
+options:
+  deploymentTarget:
+    iOS: '17.0'
+schemes:
+  VoiceLab:
+    build:
+      targets:
+        VoiceLab: all
+    test:
+      targets: [VoiceLabTests]
+targets:
+  VoiceLab:
+    type: application
+    platform: iOS
+    sources:
+      - path: VoiceLab
+        excludes: [Models]
+      - path: VoiceLab/Models
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.littlecompany.voicelab
+        DEVELOPMENT_TEAM: 2NPACMVW3K
+        CODE_SIGN_STYLE: Automatic
+        "CODE_SIGN_IDENTITY[sdk=iphonesimulator*]": "-"
+        "CODE_SIGN_ENTITLEMENTS[sdk=iphonesimulator*]": Simulator.entitlements
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Voice Lab
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Record short voice samples for on-device speaker enrollment and matching.
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        TARGETED_DEVICE_FAMILY: '1,2'
+        SWIFT_VERSION: '5.0'
+        MARKETING_VERSION: '0.1'
+        CURRENT_PROJECT_VERSION: '1'
+  VoiceLabTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [VoiceLabTests]
+    dependencies:
+      - target: VoiceLab
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        "CODE_SIGN_IDENTITY[sdk=iphonesimulator*]": "-"
